@@ -1,0 +1,411 @@
+/* =========================
+   GLOBAL RESET
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0f172a;
+  color: white;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* =========================
+   PAGE LAYOUT
+========================= */
+.page {
+  min-height: 100vh;
+  background-color: #0f172a;
+  color: white;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 30px 0;
+}
+
+/* =========================
+   AUTH PAGES
+========================= */
+.auth-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0f172a;
+  padding: 20px;
+}
+
+.auth-box {
+  background: #1e293b;
+  border: 1px solid #334155;
+  padding: 35px;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 420px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.auth-box h1 {
+  color: #f97316;
+  margin-bottom: 10px;
+  font-size: 32px;
+}
+
+.auth-box p {
+  color: #94a3b8;
+  margin-bottom: 20px;
+}
+
+/* =========================
+   FORM ELEMENTS
+========================= */
+.input {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 15px;
+  border-radius: 12px;
+  border: 1px solid #475569;
+  background: #0f172a;
+  color: white;
+  font-size: 15px;
+  outline: none;
+}
+
+.input:focus {
+  border-color: #f97316;
+}
+
+.textarea {
+  width: 100%;
+  padding: 16px;
+  border-radius: 14px;
+  border: 1px solid #475569;
+  background: #0f172a;
+  color: white;
+  font-size: 15px;
+  min-height: 110px;
+  outline: none;
+  resize: vertical;
+}
+
+.textarea:focus {
+  border-color: #f97316;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+.button {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 12px;
+  background: #f97316;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.button:hover {
+  background: #ea580c;
+}
+
+/* =========================
+   LINKS
+========================= */
+.link-text {
+  margin-top: 15px;
+  text-align: center;
+  color: #94a3b8;
+}
+
+.link-highlight {
+  color: #f97316;
+  font-weight: bold;
+}
+
+.link-highlight:hover {
+  text-decoration: underline;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+.navbar {
+  background: #111827;
+  border-bottom: 1px solid #334155;
+  padding: 18px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+  color: #f97316;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+  color: #cbd5e1;
+  font-size: 15px;
+}
+
+.nav-links a:hover {
+  color: white;
+}
+
+/* =========================
+   TITLES / HEADINGS
+========================= */
+.hero-title {
+  font-size: 38px;
+  color: #f97316;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.hero-subtitle {
+  color: #94a3b8;
+  margin-bottom: 30px;
+  font-size: 16px;
+}
+
+.section-title {
+  color: #f97316;
+  font-size: 28px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.section-text {
+  color: #cbd5e1;
+  line-height: 1.8;
+  white-space: pre-line;
+}
+
+/* =========================
+   GRID SYSTEM
+========================= */
+.grid {
+  display: grid;
+  gap: 20px;
+}
+
+.grid-2 {
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.grid-3 {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+/* =========================
+   CARD UI
+========================= */
+.card {
+  background: #1e293b;
+  border: 1px solid #334155;
+  padding: 22px;
+  border-radius: 20px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.card:hover {
+  border-color: #f97316;
+  transform: translateY(-3px);
+}
+
+.card h2,
+.card h3 {
+  color: white;
+  margin-bottom: 10px;
+}
+
+.card p {
+  color: #94a3b8;
+  line-height: 1.6;
+}
+
+/* =========================
+   NEWS SOURCE LABEL
+========================= */
+.source {
+  color: #fb923c;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+/* =========================
+   CONTENT SECTIONS
+========================= */
+.section-box {
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 20px;
+  padding: 28px;
+  margin-top: 30px;
+}
+
+.answer-box {
+  margin-top: 20px;
+  background: #0f172a;
+  border: 1px solid #334155;
+  padding: 20px;
+  border-radius: 16px;
+}
+
+/* =========================
+   TIMELINE
+========================= */
+.timeline-item {
+  border-left: 4px solid #f97316;
+  padding: 12px 16px;
+  background: #0f172a;
+  border-radius: 12px;
+  margin-bottom: 14px;
+}
+
+.timeline-date {
+  color: #fb923c;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+/* =========================
+   KEY PLAYERS
+========================= */
+.player-box {
+  background: #0f172a;
+  border: 1px solid #334155;
+  padding: 18px;
+  border-radius: 16px;
+}
+
+.player-box h3 {
+  color: #fb923c;
+  margin-bottom: 10px;
+}
+
+.player-box p {
+  color: #cbd5e1;
+  font-size: 15px;
+}
+
+/* =========================
+   LANGUAGE BUTTONS
+========================= */
+.language-buttons {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.lang-btn {
+  padding: 10px 18px;
+  border-radius: 12px;
+  border: 1px solid #475569;
+  background: #1e293b;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.lang-btn:hover {
+  border-color: #f97316;
+}
+
+.lang-btn.active {
+  background: #f97316;
+  border: none;
+}
+
+/* =========================
+   LOADER
+========================= */
+.loader {
+  width: 45px;
+  height: 45px;
+  border: 5px solid #f97316;
+  border-top: 5px solid transparent;
+  border-radius: 50%;
+  animation: spin 0.9s linear infinite;
+  margin: 40px auto;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 16px 20px;
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+  }
+
+  .logo {
+    font-size: 24px;
+  }
+
+  .hero-title {
+    font-size: 30px;
+  }
+
+  .section-title {
+    font-size: 24px;
+  }
+
+  .auth-box {
+    padding: 28px 22px;
+  }
+
+  .container {
+    width: 92%;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 26px;
+  }
+
+  .auth-box h1 {
+    font-size: 28px;
+  }
+
+  .button {
+    font-size: 14px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
